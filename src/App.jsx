@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Auth from "./pages/Auth";
 
 function App() {
   return (
-    <>
-      <div className="text-4xl font-bold font-sans">شروع پروژه</div>
-    </>
+   <div className="container xl:max-w-screen-xl" >
+     <Routes>
+      <Route path="/auth" element={<Auth />} />
+    </Routes>
+   </div>
   );
 }
 
